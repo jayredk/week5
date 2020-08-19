@@ -1,0 +1,208 @@
+.p-banner {
+    margin-bottom: 60px;
+    @include mobile() {
+        margin: 0;
+    }
+}
+
+
+.p-products {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    @include mobile() {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+.p-menu {
+    width: 30%;
+    @include mobile() {
+        width: 100%;
+    }
+    a {
+        display: block;
+        text-decoration: none;
+        color: $primary-dark;
+        padding: 16px 0;
+    }
+    &-category {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 40px;
+        background: $primary-dark;
+        color: $primary-light;
+        text-align: center;
+        padding: 16px 0;
+    }
+    &-selected {
+        background: $primary-light;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 40px;
+        color: $primary-dark;
+        text-align: center;
+    }
+    &-selected:hover {
+        background-color: $primary-light;
+        transition: all .5s;
+    }
+    &-item {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 40px;
+        border: 1px solid $primary-light;
+        color: $primary-dark;
+        text-align: center;
+    }
+    &-item:hover {
+        background-color: $primary-light;
+        transition: all .5s;
+    }
+}
+
+.p-content {
+    width: 67%;
+    @include mobile() {
+        width: 100%;
+        padding: 30px;
+    }
+}
+
+.p-cardList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &-item {
+        width: 48%;
+        margin-bottom: 20px;
+        position: relative;
+        @include mobile() {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.p-card {
+    &-tag p {
+        position: absolute;
+        left: 20px;
+        writing-mode: vertical-lr;
+        letter-spacing: 5px;
+        line-height: 20px;
+        color: $info;
+        background: $primary-dark;
+        padding: 10px;
+    }
+    &-tag i {
+        color: $primary-dark;
+        font-size: 1.25rem;
+        position: absolute;
+        top: 19px;
+        right: 22px;
+    }
+    &-tag i:hover {
+        font-weight: bold;
+    }
+    &-img {
+        width: 100%;
+    }
+    &-info {
+        display: flex;
+    }
+    &-info h3 {
+        width: 50%;
+        font-size: 20px;
+        font-weight: 200;
+        line-height: 28px;
+        text-align: center;
+        color: $primary-dark;
+        border-left: 1px solid $primary-light;
+        border-right: 1px solid $primary-light;
+        border-bottom: 1px solid $primary-light;
+        padding: 14px 0;
+    }
+    &-info span {
+        width: 50%;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: center;
+        color: $primary-dark;
+        background: $info;
+        border-right: 1px solid $primary-light;
+        border-bottom: 1px solid $primary-light;
+        padding: 14px 0;
+    }
+    &-addCart {
+        display: block;
+        width: 100%;
+        border:0;
+        background-color:$primary-light;
+        color: $primary-dark;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 33px;
+        padding: 16px 0;
+        text-align: center;
+        cursor: pointer;
+    }
+    &-addCart:hover {
+        background-color: $primary-dark;
+        color: $primary-light;
+    }
+}
+
+
+
+.p-pagination {
+    display: flex;
+    justify-content: flex-end;
+    @include mobile() {
+        display: flex;
+        justify-content: center;
+    }
+    &-arrow img {
+        padding: 17px;
+        line-height: 20px;
+        border: 1px solid $primary-light;
+    }
+    &-arrow:hover {
+        background-color: $primary-light;
+    }
+    &-selected {
+        display: inline-flex;
+        width: 60px;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 28px;
+        border: 1px solid $primary-dark;
+        background: $primary-dark;
+        color: $info;
+        text-decoration: none;
+    }
+    &-selected:hover {
+        background-color: $primary-dark;
+    }
+    &-item {
+        display: inline-flex;
+        width: 60px;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 28px;
+        color: $primary-dark;
+        border: 1px solid $primary-light;
+        text-decoration: none;
+        }
+    &-item:hover {
+        background-color: $primary-light;
+    }
+}

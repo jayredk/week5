@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweetaste</title>
+    <meta property="og:title" content="甜點電商">
+    <meta property="og:description" content="week5多頁式設計">
+    <meta property="og:site_name" content="甜點電商">
+    <meta property="og:locale" content="zh_TW">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="l-header">
+            <button class="l-header-bars"><i class="fas fa-bars"></i></button>
+            <h1 class="l-header-logo">
+                <a class="l-header-logo-pc" href="index.html">logo</a>
+                <a class="l-header-logo-mobile" href="index.html">logo</a>
+            </h1>
+            <ul class="l-header-nav">
+                <li><a class="l-header-nav-links" href="index.html">首頁</a></li>
+                <li><a class="l-header-nav-links" href="index.html">甜點</a></li>
+                <li><a class="l-header-nav-links" href="#">登入</a></li>
+            </ul>
+            <a class="l-header-cart" href="checkout-invoice.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </div>
+
+<!-- block content -->
+<!-- block content -->
+<!-- block content -->
+<!-- block content -->
+<!-- block content -->
+<!-- block content -->
+
+    <form action="index.html" class="l-subscription">
+        <div class="l-subscription-inner">
+            <div class="l-subscription-header">
+                <img src="https://hexschool.github.io/webLayoutTraining1st/student-week1/logo-light.svg" alt="">
+                <label for="mail" class="l-subscription-title">訂閱你我的甜蜜郵件</label>
+            </div>
+            <div class="l-subscription-input">
+                <i class="fas fa-envelope"></i>
+                <input id="mail" type="email" name="mail" class="l-subscription-typeIn">
+                <input type="button" value="&#xf061" class="l-subscription-btn">
+            </div>
+        </div>
+    </form>
+
+    <div class="l-footer">
+        <div class="l-footer-inner">
+            <div class="l-footer-content">
+                <div class="l-footer-content-info">
+                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg"
+                        alt="">
+                    <ul>
+                        <li>07-1234-5678</li>
+                        <li>sweetaste@email.com</li>
+                        <li>800 高雄市新興區幸福路 520 號</li>
+                    </ul>
+                </div>
+                <div class="l-footer-content-slogan">
+                    <img src="images/quote.svg" alt="">
+                </div>
+            </div>
+            <div class="l-footer-legal">
+                <ul>
+                    <li><a href="#"><img class="l-footer-legal-icon"
+                                src="https://hexschool.github.io/webLayoutTraining1st/student-week1/ic-line@.svg"
+                                alt=""></a></li>
+                    <li><a href="#"><img class="l-footer-legal-icon"
+                                src="https://hexschool.github.io/webLayoutTraining1st/student-week1/ic-facebook.svg"
+                                alt=""></a></li>
+                </ul>
+                <p class="l-footer-legal-copyright">© 2018 Sweetaste* All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 200, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 800, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/all.js"></script>
+</body>
+
+</html>

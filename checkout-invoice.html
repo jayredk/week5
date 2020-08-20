@@ -9,6 +9,7 @@
   <meta property="og:description" content="week5多頁式設計">
   <meta property="og:site_name" content="甜點電商">
   <meta property="og:locale" content="zh_TW">
+  <link rel="shortcut icon" href="images/shorcut-logo.svg" type="image/x-icon">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.min.css">
@@ -33,7 +34,7 @@
 
   <div class="container">
     <div class="p-invoice">
-      <div class="p-invoice-section">
+      <div class="p-invoice-section" data-aos="zoom-in-right">
         <form class="p-invoice-form" action="">
           <div class="p-invoice-form-header">
             <h2>發票</h2>
@@ -43,19 +44,47 @@
               <li><i class="far fa-dot-circle"></i></li>
             </ul>
           </div>
+          <input type="radio" name="p-panelControl" id="p-eInvoiceBtn" checked>
+          <input type="radio" name="p-panelControl" id="p-postInvoiceBtn">
           <div class="p-btn-group">
-            <input type="button" class="p-eInvoice" value="電子發票">
-            <input type="button" class="p-postInvoice" value="郵寄發票">
+            <label class="p-eInvoice" for="p-eInvoiceBtn">電子發票</label>
+            <label class="p-postInvoice" for="p-postInvoiceBtn">郵寄發票</label>
           </div>
-          <label for="">電子郵件信箱</label>
-          <input type="email"" value=" example@email.com">
-          <label for="">統一編號（選填）</label>
-          <input id="invoice" type="text" value="12345678">
+          <div class="p-eInvoiceForm">
+            <label for="email">電子郵件信箱</label>
+            <input id="email" type="email" placeholder="example@email.com">
+            <label for="taxID">統一編號（選填）</label>
+            <input id="taxID" type="text" placeholder="12345678">
+          </div>
+          <div class="p-postInvoiceForm">
+            <div class="p-postInvoiceForm-header">
+              <label for="address">地址</label>
+              <label for="">
+                <input type="checkbox" name="" id="">
+                <span>同運送地址</span>
+              </label>
+            </div>
+            <div class="p-postInvoiceForm-address">
+              <select name="" id="">
+                <option selected>
+                  高雄市
+                </option>
+              </select>
+              <select name="" id="">
+                <option selected>
+                  新興區
+                </option>
+              </select>
+            </div>
+            <input id="address" type="text" placeholder="幸福路 520 號">
+            <label for="taxID">統一編號（選填）</label>
+            <input id="taxID" type="text" placeholder="12345678">
+          </div>
         </form>
-        <a class="checkout-btn" href="payment-success.html">確認結帳</a>
+        <a class="p-checkout-btn" href="payment-success.html">確認結帳</a>
       </div>
       
-      <div class="p-order">
+      <div class="p-order" data-aos="zoom-in-left">
         <ul class="p-order-summary">
           <h3>訂單摘要</h3>
           <li>

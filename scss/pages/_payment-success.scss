@@ -60,4 +60,8 @@
     top: 100%;
     left: 0;
   }
+  &:hover {
+    color: $danger;
+    transition: .3s;
+  }
 }

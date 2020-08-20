@@ -135,9 +135,9 @@
             margin-right: 8px;
         }
         &-icon:hover {
-            border: 1px solid skyblue;
+            border: 1px solid $secondary;
             border-radius: 10px;
-            box-shadow: 0 0 5px skyblue;
+            box-shadow: 0 0 5px $secondary;
             transition: all .5s;
         }
         &-icon:active {

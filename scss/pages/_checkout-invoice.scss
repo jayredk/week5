@@ -163,6 +163,7 @@
       border: 0;
       color: $success;
       font-size: 1rem;
+      font-weight: 300;
       padding: 17px 0 17px 20px;
       width: 49%;
     }
@@ -221,6 +222,7 @@
       justify-content: space-between;
       color: $success;
       padding: 16px 20px 8px 20px;
+      line-height: 22px;
     }
     li:nth-last-child(1) {
       font-size: 20px;
